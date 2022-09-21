@@ -14,9 +14,10 @@ if __name__ == "__main__":
 ```py
 bot = SnapchatBot()
 bot.send_message("message","target",group= True or False)
+bot.stop()
 ```
 > Note: ⚠ You have to precise if the target is a group or not 
-
+> Note: use bot.stop to close properly the selenium session
 ## get friends and list
 ```py
 print(bot.get_friends_list())
