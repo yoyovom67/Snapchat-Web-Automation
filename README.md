@@ -17,15 +17,21 @@ bot.send_message("message","target",group= True or False)
 ```
 > Note: ⚠ You have to precise if the target is a group or not 
 
+## get friends and list
+```py
+print(bot.get_friends_list())
+print(bot.get_groups_list())
+```
+
 ## get group members 
 ```py
 bot.get_group_members("group_name")
 ```
 
-## get friends  and list
+## get text of the current conversation
+
 ```py
-print(bot.get_friends_list())
-print(bot.get_groups_list())
+text=bot.get_text()
 ```
 
 N.B.: please note that I am a beginner and that my code is not always written "cleanly". So please be indulgent.
